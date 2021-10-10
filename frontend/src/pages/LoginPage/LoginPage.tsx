@@ -3,12 +3,13 @@ import { Button, TextField } from '@mui/material';
 import './LoginPage.scss';
 
 const LoginPage: React.FunctionComponent = (): JSX.Element => {
+    const [name, setName] = React.useState('');
 
-    // const onChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    //     e.preventDefault();
-    //     const { value } = e.target;
-    //     setName(value);
-    // };
+    const onChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+        e.preventDefault();
+        const { value } = e.target;
+        setName(value);
+    };
     
     // const handleError = (): void => {
     //     const regex = new RegExp(/^[^*|":<>[\]{}`\\()';@&$]+$/);
@@ -29,8 +30,8 @@ const LoginPage: React.FunctionComponent = (): JSX.Element => {
                     size="small"
                     autoComplete="off"
                     type="text"
-                    // value={name}
-                    // onChange={onChange}
+                    value={name}
+                    onChange={onChange}
                     // helperText={helperText}
                     // error={errorState}
                 />
