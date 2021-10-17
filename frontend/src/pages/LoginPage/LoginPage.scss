@@ -1,0 +1,18 @@
+@import '../../styles/utils/utils';
+
+body {
+    background-color: rgb(238, 232, 220);
+}
+
+.login {
+    @include flex(column, center, center, 1em);
+    @include setSize(100%, 40em);
+}
+
+form {
+    @include flex(row, center, center, 1em);
+}
+
+.error-message {
+    font-weight: 700;
+}
