@@ -1,7 +1,7 @@
-import { Request, Response } from 'express';
+import { Request, Response } from "express";
 
-function helloController(req: Request, res: Response){
-    res.send('hello szia')
+function helloController(req: Request, res: Response) {
+  res.send("hello szia");
 }
 
-export {helloController}
+export { helloController };

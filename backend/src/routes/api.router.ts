@@ -9,7 +9,7 @@ router.use(cors());
 router.use(express.json());
 
 router.get('/hello', helloController);
-router.get('/asd', postUserConstroller);
+router.post('/user', postUserConstroller);
 router.get('/users', getUsersController);
 
 export default router;
