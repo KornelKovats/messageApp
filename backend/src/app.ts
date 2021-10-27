@@ -1,7 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import api from "./routes/api.router";
-import { errorHandler } from "./middlewares/error-handler";
+import { errorHandler } from "./middlewares/errorHandler";
 
 const app = express();
 

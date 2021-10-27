@@ -3,6 +3,7 @@ import cors from "cors";
 import { helloController } from "../controllers";
 import { getUsersController } from "../controllers";
 import { postUserConstroller } from "../controllers";
+
 const router = express.Router();
 
 router.use(cors());

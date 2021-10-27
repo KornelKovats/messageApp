@@ -7,7 +7,6 @@ interface Error {
   message?: string;
 }
 
-// eslint-disable-next-line no-unused-vars
 export const errorHandler = (
   err: Error,
   req: Request,
